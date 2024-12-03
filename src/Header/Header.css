@@ -27,10 +27,10 @@ body {
       border: 1px solid #000000;
       border-radius: 4px;
       padding: 3px 10px;
-      max-width: 400px;
+      max-width: 250px;
       position: relative;
       flex-grow: 1;
-      margin-right: 390px;
+      margin-right: 580px;
     }
     
     .search-bar input {

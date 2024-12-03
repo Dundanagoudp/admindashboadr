@@ -1,100 +1,147 @@
-/* Sidebar */
+
 .sidebar {
-      width: 240px;
-      height: 100vh;
-      background-color: #f8f9fa;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 1rem;
-      font-family: "Arial", sans-serif;
-    }
-    
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #1c2b78;
-      margin-bottom: 2rem;
-    }
-    
-    .logo .pro {
-      color: #4a89f3;
-      font-size: 18px;
-      font-weight: normal;
-    }
-    
-    .menu {
-      flex: 1;
-    }
-    
-    .section-title {
-      font-size: 12px;
-      color: #868e96;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-    
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    li {
-      display: flex;
-      align-items: center;
-      padding: 0.75rem 0.5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      color: #495057;
-      transition: background-color 0.3s ease;
-    }
-    
-    li:hover {
-      background-color: #e9ecef;
-    }
-    
-    .icon {
-      font-size: 18px;
-      margin-right: 0.75rem;
-      color: #1c2b78;
-    }
-    
-    .new {
-      margin-left: auto;
-      background-color: #4a89f3;
-      color: #fff;
-      font-size: 10px;
-      padding: 0.1rem 0.4rem;
-      border-radius: 4px;
-      text-transform: uppercase;
-    }
-    
-    .user-info {
-      display: flex;
-      align-items: center;
-      margin-top: 2rem;
-      padding: 1rem 0;
-      border-top: 1px solid #dee2e6;
-    }
-    
-    .user-info img {
-      border-radius: 50%;
-      margin-right: 1rem;
-    }
-    
-    .user-info div {
-      font-size: 14px;
-    }
-    
-    .user-info p {
-      margin: 0;
-      font-weight: bold;
-    }
-    
-    .user-info span {
-      color: #868e96;
-      font-size: 12px;
-    }
-    
+  width: 250px;
+  background-color: #ffd6f9;
+  height: 100vh;
+  box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
+  /* overflow-y: auto; */
+
+}
+
+.sidebar-header {
+  padding: 13px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1C2B78;
+  text-align: center;
+  border-color: #333333;
+  border: 0 0 1 0;
+  border-bottom: 1px solid #f1f1f1;
+  border-right: 1px solid #000000;
+  background-color: #ffd6f9;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-details {
+  text-align: left;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: #ffd6f9;
+  height: 100vh;
+  box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.sidebar-menu {
+  flex: 1; /* Take up remaining space */
+  padding: 15px;
+  list-style: none;
+  margin: 0;
+  overflow-y: hidden; /* Hide scrollbar by default */
+  transition: overflow 0.3s ease;
+}
+
+/* Show scrollbar on hover */
+.sidebar:hover .sidebar-menu {
+  overflow-y: auto;
+}
+
+/* Custom Scrollbar Styling */
+.sidebar-menu::-webkit-scrollbar {
+  width: 8px; /* Set scrollbar width */
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  background-color: #1C2B78; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb:hover {
+  background-color: #142056; /* Darker color on hover */
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background-color: #ffd6f9; /* Scrollbar track color */
+}
+
+.menu-section {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888888;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.menu-item {
+  margin-bottom: 5px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  color: #333333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item.active a,
+.menu-item a:hover {
+  background-color: #1C2B78;
+  color: #ffffff;
+}
+
+.menu-item.has-submenu > a {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-item.has-submenu .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 20px;
+  display: none;
+}
+
+.menu-item.has-submenu.open .submenu {
+  display: block;
+}
+
+.new-item .badge {
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.sidebar-footer {
+  padding: 15px;
+  border-top: 1px solid #f1f1f1;
+  text-align: center;
+  background-color: #ffffff; /* Optional: Fixed footer background */
+}
