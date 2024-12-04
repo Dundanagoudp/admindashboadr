@@ -29,8 +29,11 @@ body {
       padding: 3px 10px;
       max-width: 250px;
       position: relative;
-      flex-grow: 1;
-      margin-right: 580px;
+      padding: 2px 5px;
+  max-width: 250px; /* Adjusted to make it smaller */
+  position: relative;
+  margin-right: auto; /* Align search bar left */
+  margin-left: 50px;
     }
     
     .search-bar input {

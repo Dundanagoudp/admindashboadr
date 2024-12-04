@@ -4,7 +4,6 @@
   background-color: #ffd6f9;
   height: 100vh;
   box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
-  /* overflow-y: auto; */
 
 }
 
@@ -13,7 +12,7 @@
   font-size: 24px;
   font-weight: bold;
   color: #1C2B78;
-  text-align: center;
+  /* text-align: center; */
   border-color: #333333;
   border: 0 0 1 0;
   border-bottom: 1px solid #f1f1f1;
@@ -145,3 +144,4 @@
   text-align: center;
   background-color: #ffffff; /* Optional: Fixed footer background */
 }
+
