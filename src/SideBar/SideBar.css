@@ -1,10 +1,8 @@
-
 .sidebar {
   width: 250px;
   background-color: #ffd6f9;
   height: 100vh;
   box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
-
 }
 
 .sidebar-header {
@@ -12,7 +10,6 @@
   font-size: 24px;
   font-weight: bold;
   color: #1C2B78;
-  /* text-align: center; */
   border-color: #333333;
   border: 0 0 1 0;
   border-bottom: 1px solid #f1f1f1;
@@ -50,37 +47,36 @@
   box-shadow: 1px 0 1px rgba(0, 0, 0, 0.1);
 }
 
-
 .sidebar-menu {
-  flex: 1; /* Take up remaining space */
+  flex: 1;
   padding: 15px;
   list-style: none;
   margin: 0;
-  overflow-y: hidden; /* Hide scrollbar by default */
+  overflow-y: hidden;
   transition: overflow 0.3s ease;
 }
 
-/* Show scrollbar on hover */
 .sidebar:hover .sidebar-menu {
   overflow-y: auto;
+  
 }
 
-/* Custom Scrollbar Styling */
 .sidebar-menu::-webkit-scrollbar {
-  width: 8px; /* Set scrollbar width */
+  width: 5px;
 }
 
 .sidebar-menu::-webkit-scrollbar-thumb {
-  background-color: #1C2B78; /* Scrollbar thumb color */
-  border-radius: 4px; /* Rounded corners */
+  background-color: #1C2B78;
+  border-radius: 5px;
+  
 }
 
 .sidebar-menu::-webkit-scrollbar-thumb:hover {
-  background-color: #142056; /* Darker color on hover */
+  background-color: #142056;
 }
 
 .sidebar-menu::-webkit-scrollbar-track {
-  background-color: #ffd6f9; /* Scrollbar track color */
+  background-color: #ffd6f9;
 }
 
 .menu-section {
@@ -142,6 +138,6 @@
   padding: 15px;
   border-top: 1px solid #f1f1f1;
   text-align: center;
-  background-color: #ffffff; /* Optional: Fixed footer background */
+  background-color: #ffffff;
 }
 

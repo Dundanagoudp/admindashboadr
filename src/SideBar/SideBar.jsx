@@ -28,6 +28,7 @@ export const SideBar = () => {
             </div>
           )}
         </div>
+        
         <div className="menu-item">
           <a href="#">
             <FaFileInvoice /> Invoice
@@ -76,13 +77,28 @@ export const SideBar = () => {
             <MdChat /> Chat
           </a>
         </div>
+        <div className="menu-item">
+          <a href="#">
+            <MdChat /> Chat
+          </a>
+        </div>
+        <div className="menu-item">
+          <a href="#">
+            <MdChat /> Chat
+          </a>
+        </div>
+        <div className="menu-item">
+          <a href="#">
+            <MdChat /> Chat
+          </a>
+        </div>
       </nav>
       <div className="sidebar-footer">
         <div className="user-info">
-          <img src="https://via.placeholder.com/40" alt="User Avatar" />
+          <img src="/admin.png" alt="User Avatar" />
           <div className="user-details">
-            <div className="user-name">JWT User</div>
-            <div className="user-role">UI/UX Designer</div>
+            <div className="user-name">Chetan</div>
+            <div className="user-role">Developer Team</div>
           </div>
         </div>
       </div>
