@@ -95,7 +95,7 @@ export const SideBar = () => {
       </nav>
       <div className="sidebar-footer">
         <div className="user-info">
-          <img src="/admin.png" alt="User Avatar" />
+          <img src="\admin.png" alt="User Avatar" />
           <div className="user-details">
             <div className="user-name">Chetan</div>
             <div className="user-role">Developer Team</div>

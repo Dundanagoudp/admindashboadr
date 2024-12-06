@@ -1,19 +1,14 @@
-/* AppLayout.css */
-
-/* Styles for the main layout container */
 .layoutContainer {
   display: flex;
   height: 100vh;
   overflow: hidden;
 }
 
-/* Styles for the sidebar wrapper (desktop view) */
 .sidebarWrapper {
   transition: width 0.3s ease-in-out;
   overflow: hidden;
 }
 
-/* Styles for the sidebar modal (mobile view) */
 .sidebarModal {
   position: fixed;
   top: 0;
@@ -32,7 +27,6 @@
   opacity: 1;
 }
 
-/* Styles for the sidebar content (mobile view) */
 .sidebarContent {
   width: 250px;
   height: 100%;
@@ -46,7 +40,6 @@
   transform: translateX(0);
 }
 
-/* Close button for the sidebar modal */
 .closeSidebarButton {
   background: none;
   border: none;
@@ -57,7 +50,6 @@
   cursor: pointer;
 }
 
-/* Main content area styles */
 .mainContent {
   flex: 1;
   overflow: auto;
