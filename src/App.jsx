@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router-dom";
 import AppLayout from "./AppLayout/AppLayout";
-import { DashBoard } from "./DashBoard/DashBoard";
 import { SideBar } from "./SideBar/SideBar";
+import { Dashboard } from "./components/DashBoard";
 
 
 export const App=()=>{
@@ -18,7 +18,11 @@ export const App=()=>{
             {
                 path:"/sidebar",
                 element:<SideBar/>
-            }            
+            },
+            {
+                path:"/dashboard",
+                element:<Dashboard/>
+            },            
            
         ]
     }

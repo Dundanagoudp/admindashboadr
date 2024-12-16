@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Header } from "../Header/Header";
 import { SideBar } from "../SideBar/SideBar";
 import "../AppLayout/AppLayout.css"; // Import the CSS file
+import { Dashboard } from "../components/DashBoard";
 
 // Creating the context
 export const myContext = createContext();
@@ -74,6 +75,7 @@ const AppLayout = () => {
         {/* Main Content Area */}
         <div className="mainContent">
           {!isHideSidebarAndHeader && <Header />}
+          <Dashboard/>
           <Outlet />
         </div>
       </div>
