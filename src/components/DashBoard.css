@@ -9,8 +9,8 @@ body {
   align-items: center;
   background: linear-gradient(to right, #3a86ff, #639cff);
   border-radius: 12px;
-  padding: 20px 10%; /* Padding for internal spacing */
-  margin: 20px 20px; /* Added margin: 40px top, 20px left and right */
+  padding: 20px 5%; /* Padding for internal spacing */
+  margin: 20px 25px; /* Added margin: 40px top, 20px left and right */
   color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for a lifted effect */
   overflow: hidden;
@@ -35,19 +35,23 @@ body {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
-  color: #3a86ff;
-  background: #fff;
-  border: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2); /* Transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle border */
   border-radius: 8px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
-  transition: background 0.3s ease, color 0.3s ease;
+  backdrop-filter: blur(10px); /* Glassy effect */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 .banner .cta-button:hover {
-  background: #3a86ff;
+  background: linear-gradient(135deg, #3a86ff, #8338ec); /* Gradient effect */
   color: #fff;
+  transform: scale(1.05); /* Slight enlargement */
+  box-shadow: 0 8px 15px rgba(58, 134, 255, 0.5), 0 4px 10px rgba(131, 56, 236, 0.4); /* Glowing effect */
 }
 
 .banner .image img {
